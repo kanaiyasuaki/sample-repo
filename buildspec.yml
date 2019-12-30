@@ -18,7 +18,7 @@ phases:
       - echo Pushing the Docker image...
       - docker push 167551637330.dkr.ecr.ap-northeast-1.amazonaws.com/kanai/repo1:latest
       - echo Writing image definitions file...
-      - printf '[{"name":"{container name}","imageUri":"%s"}]' 167551637330.dkr.ecr.ap-northeast-1.amazonaws.com/kanai/repo1:latest > imagedefinitions.json
+      - printf '[{"name":"test-container","imageUri":"%s"}]' 167551637330.dkr.ecr.ap-northeast-1.amazonaws.com/kanai/repo1:latest > imagedefinitions.json
 artifacts:
   files:
     - imagedefinitions.json
