@@ -3,7 +3,15 @@ Resources:
   - TargetService:
       Type: AWS::ECS::Service
       Properties:
-        TaskDefinition: "<TASK_DEFINITION>"
+        TaskDefinition: <TASK_DEFINITION>
         LoadBalancerInfo:
-            ContainerName: "test-container"
-            ContainerPort: "80"
+            ContainerName: httpd
+            ContainerPort: 80
+        NetworkConfiguration:
+          AwsvpcConfiguration:
+            Subnets:
+              - subnet-08078e692791d8817
+              - subnet-04ade85b6c401c4ea
+            SecurityGroups:
+              - sg-042097143c8f8299f
+            AssignPublicIp: ENABLED
