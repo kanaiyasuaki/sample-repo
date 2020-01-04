@@ -3,9 +3,9 @@ services:
 
   httpd:
     build: .
-    networks:
-      - mocs
+#    networks:
+#      - mocs
 
-networks:
-  mocs:
+#networks:
+#  mocs:
 
