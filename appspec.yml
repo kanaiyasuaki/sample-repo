@@ -14,5 +14,5 @@ Resources:
               - subnet-0aa0ecf775fa9062d
             SecurityGroups:
               - sg-01c33d50320ed429b
-            AssignPublicIp: ENABLED
+            AssignPublicIp: DISABLED
 
