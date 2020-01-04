@@ -10,8 +10,9 @@ Resources:
         NetworkConfiguration:
           AwsvpcConfiguration:
             Subnets:
-              - subnet-08078e692791d8817
-              - subnet-04ade85b6c401c4ea
+              - subnet-0e1045820728d3c4a
+              - subnet-0aa0ecf775fa9062d
             SecurityGroups:
-              - sg-042097143c8f8299f
-            AssignPublicIp: ENABLED
+              - sg-01c33d50320ed429b
+            AssignPublicIp: DISABLED
+
